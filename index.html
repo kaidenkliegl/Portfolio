@@ -2,43 +2,40 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kaiden Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
   </head>
   <body>
     <nav>
-      <h1 class="header">Portfolio</h1>
+      <h1>Kaidens Portfolio</h1>
       <div class="navs">
-        <div><a href="">Home</a><div class="light"></div></div>
-        <div><a href="">Contact</a><div class="light"></div></div>
-        <div><a href="">Projects</a><div class="light"></div></div>
-        <div><a href="">About</a><div class="light"></div></div>
+        <button href="home" id="home-btn">Home</button>
+        <button href="About Me" id="about-btn">About Me</button>
+        <button href="Contact Me" id="contact-btn">Contact Me</button>
+        <button id="resumeBtn">Resume</button>
       </div>
     </nav>
-    <section class="main-home">
-      <h3>
-        Web Developer  
-      </h3>
-      <p class="text header-text"></p>
-      <p class="header-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-    </section>
-    <section class="content-section">
-      <div class="content-header">
-        <a href="">Home</a>
-        <a href="">Contact</a>
-        <a href="">Projects</a>
-        <a href="">About</a>
-        
+    <div id="main-container">
+      <div class="content-container">
+        <h2>Hi, I’m Kaiden</h2>
+        <h3>A Front-End Developer Creating Beautiful, Responsive Websites</h3>
+        <p>
+          "I specialize in crafting dynamic, user-friendly websites and
+          applications that combine clean design with robust functionality. My
+          expertise spans front-end technologies like React, JavaScript, and
+          CSS, as well as back-end development with Node.js and RESTful APIs.
+          Passionate about responsive design, performance optimization, and
+          creating seamless user experiences, I bring creative solutions to
+          real-world challenges."
+        </p>
+        <button>Contact Me</button>
       </div>
-    </section>
-    <script src="script.js"></script>
+      <div class="image-box"><img src="download.jpeg" alt=""></div>
+    </div>
+    <div id="about-main"><h1>this is about me</h1></div>
+    <div id="contact-main"><h1>this is about me</h1></div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
