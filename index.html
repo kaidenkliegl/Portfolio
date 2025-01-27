@@ -2,8 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barriecito&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/style.css
+    "
+    />
     <title>Document</title>
   </head>
   <body>
@@ -12,13 +23,27 @@
       <div class="navs">
         <button href="home" id="home-btn">Home</button>
         <button href="About Me" id="about-btn">About Me</button>
-        <button href="Contact Me" id="contact-btn">Contact Me</button>
+        <div class="dropdown">
+          <button
+            onclick="myFunction()"
+            href="Contact Me"
+            id="contact-btn"
+            class="dropbtn"
+          >
+            Contact Me
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
         <button id="resumeBtn">Resume</button>
       </div>
     </nav>
     <div id="main-container">
       <div class="content-container">
-        <h2>Hi, I’m Kaiden</h2>
+        <h2>Hi, I'm Kaiden</h2>
         <h3>A Front-End Developer Creating Beautiful, Responsive Websites</h3>
         <p>
           "I specialize in crafting dynamic, user-friendly websites and
@@ -31,11 +56,65 @@
         </p>
         <button>Contact Me</button>
       </div>
-      <div class="image-box"><img src="download.jpeg" alt=""></div>
+      <div class="image-box"><img src="images /download.jpeg" alt="" /></div>
     </div>
-    <div id="about-main"><h1>this is about me</h1></div>
-    <div id="contact-main"><h1>this is about me</h1></div>
+    <div id="about-main">
+      <div class="about-me-box"><h2 class="about-me">About Me</h2></div>
+      <div class="grid-container">
+        <div class="grid-item grid-text gridBox1">
+          <p>
+            I grew up in Oregon and now call Northern California my home. From
+            an early age, I developed a fascination with technology and
+            creativity, which has grown into a strong passion for coding and
+            building websites. I love the challenge of bringing ideas to life
+            through code and take pride in creating user-friendly, visually
+            appealing web experiences. My journey in web development continues
+            to inspire me every day as I explore new tools and techniques to
+            refine my skills.
+          </p>
+        </div>
+        <div class="grid-item grid-pic gridBox1">
+          <img src="./images /download (1).jpeg" alt="" />
+        </div>
 
-    <script src="./script.js"></script>
+        <div class="grid-item grid-header"><h2>Skills</h2></div>
+        <div class="grid-item grid-list">
+          <ul>
+            <li>
+              HTML5: The backbone of web pages, used for structuring content.
+              Knowing HTML semantics improves accessibility and SEO.
+            </li>
+            <li>
+              CSS3: Styling pages with layouts, typography, and colors. Advanced
+              CSS skills like Flexbox, Grid, and animations are highly sought
+              after.
+            </li>
+            <li>
+              JavaScript: Essential for adding interactivity and dynamic
+              functionality to web pages.
+            </li>
+            <li>
+              Ability to design websites that work well on all screen sizes
+              using media queries, flexible layouts, and viewport units.
+            </li>
+            <li>Version Control/Git</li>
+          </ul>
+        </div>
+        <div class="grid-item grid-hobbies grid-list">
+          <ul>
+            <li>Creating projects in Javascript.</li>
+            <li>I enjoy snowboarding on the weekends in Tahoe.</li>
+            <li>I am an avid fisherman and enjoy salmon fishing.</li>
+            <li>
+              Playing golf on my free time is one of my favorite hobbies. I also
+              Enjoy teaching and am a certified Jr. PGA coach.
+            </li>
+          </ul>
+        </div>
+        <div class="grid-item grid-header"><h2>Hobbies</h2></div>
+      </div>
+    </div>
+
+    <script src="./JS/script.js"></script>
   </body>
 </html>

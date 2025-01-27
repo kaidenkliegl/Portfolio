@@ -1,0 +1,48 @@
+.grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  row-gap: 5vh;
+}
+.about-me-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3vh;
+}
+.about-me {
+  font-size: 5rem;
+}
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10vmin;
+  text-align: center;
+}
+.gridBox1 {
+  margin-bottom: 15vh;
+}
+.grid-text {
+  line-height: 1.4; /* Make the text easier to read */
+  font-size: 1.4rem; /* Slightly larger font for readability */
+  color: #333; /* Dark text color */
+}
+.grid-item li {
+  font-size: 1.3rem;
+  padding: 1em;
+}
+.grid-header {
+  font-size: 6rem;
+}
+.grid-list {
+  background: #3399ff;
+  padding: 20px;
+  border-radius: 40px;
+}
+li {
+  color: white;
+  margin: 20px;
+}
